@@ -19,6 +19,7 @@ data "terraform_remote_state" "alz_output" {
     storage_account_name = var.remote_state_sa
     container_name       = var.remote_state_container
     key                  = var.remote_state_key
+    use_azuread_auth     = true
   }
 }
 
